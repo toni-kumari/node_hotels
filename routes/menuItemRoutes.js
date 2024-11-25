@@ -30,7 +30,7 @@ router.get('/', async(req, res) =>
     try
     {
         const data = await MenuItem.find();
-        console.log('data saved');
+        console.log('data fetched');
         res.status(200).json(data);
     }
     catch(err)
